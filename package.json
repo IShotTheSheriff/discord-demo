@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts ",
+    "start": "node lib/index.js",
+    "start-ts": "ts-node src/index.ts",
     "start-fork": "USE_FORKED_RPC=true yarn start",
     "dev": "nodemon --inspect-brk=9229 src/index.ts",
     "build": "tsc --noEmit false"
